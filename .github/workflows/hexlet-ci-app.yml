@@ -4,8 +4,8 @@ jobs:
  my-job: 
     runs-on: ubuntu-latest
     steps:
-      - uses: make setup
-      - uses: make start
+      - run: make setup
+      - run: make start
       - name: run tests
         run: make test 
       - run: make lint 
